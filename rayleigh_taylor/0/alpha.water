@@ -47,7 +47,7 @@ internalField   #codeStream
         const scalar x = mesh.C()[i][0];
         const scalar y = mesh.C()[i][1];
 
-        alpha[i] = 0.5 + 0.5*tanh((y+0.1*cos(2*constant::mathematical::pi*x))/(0.007*1.414));
+        alpha[i] = 0.5 + 0.5*tanh((y-0.01*cos(2*constant::mathematical::pi*x))/(0.007*1.414));
 
         }
 
